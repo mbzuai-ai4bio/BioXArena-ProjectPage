@@ -200,7 +200,7 @@ h2 {
 
 .figure-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
 
@@ -220,10 +220,12 @@ h2 {
 
 .figure-results {
   width: min(100%, 473px);
+  justify-self: end;
 }
 
 .figure-ablation {
   width: min(100%, 438px);
+  justify-self: start;
 }
 
 .figure-card img {
