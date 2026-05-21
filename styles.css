@@ -205,7 +205,6 @@ h2 {
 }
 
 .figure-card {
-  width: min(100%, 480px);
   margin: 0 auto;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -214,9 +213,17 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.figure-card.featured {
+.figure-main {
   grid-column: 1 / -1;
   width: 85%;
+}
+
+.figure-results {
+  width: min(100%, 473px);
+}
+
+.figure-ablation {
+  width: min(100%, 438px);
 }
 
 .figure-card img {
@@ -308,7 +315,9 @@ h2 {
   }
 
   .figure-card,
-  .figure-card.featured {
+  .figure-main,
+  .figure-results,
+  .figure-ablation {
     width: 100%;
   }
 }
