@@ -192,13 +192,15 @@ h2 {
   max-width: 920px;
   margin: 0;
   color: #26322b;
-  font-size: clamp(19px, 2.4vw, 24px);
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.75;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .figure-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 22px;
 }
 
@@ -218,8 +220,8 @@ h2 {
 .figure-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   background: var(--paper-deep);
 }
 
