@@ -208,10 +208,10 @@ h2 {
   width: 86%;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.62);
-  box-shadow: var(--shadow);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .figure-main {
@@ -231,6 +231,7 @@ h2 {
   width: 100%;
   border: 0;
   background: white;
+  clip-path: inset(1px);
 }
 
 .figure-main .figure-pdf {
