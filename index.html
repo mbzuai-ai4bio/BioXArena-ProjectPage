@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <header class="site-header">
@@ -127,10 +127,17 @@ protein structures.  We evaluate 11 agent configurations, including general codi
 
         <div class="figure-grid">
           <figure class="figure-card figure-main">
-            <img
-              src="assets/Figure1_benchmark_pipeline.png"
-              alt="Placeholder for the main overview figure"
-            />
+            <object
+              class="figure-pdf"
+              data="assets/Figure1_benchmark_pipeline.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH"
+              type="application/pdf"
+              aria-label="Figure 1: Overview of BioXArena"
+            >
+              <img
+                src="assets/Figure1_benchmark_pipeline.png"
+                alt="Figure 1: Overview of BioXArena"
+              />
+            </object>
             <figcaption>
               <strong>Figure 1: Overview of BioXArena.</strong> (a) Tasks are curated from journals, conferences, and public databases by ML and biology experts,
 then packaged as unified public task capsules with hidden private labels and graders. (b) The resulting benchmark contains 76 tasks
@@ -142,7 +149,7 @@ to held-out task-specific graders. (e) Nine evaluation metrics feed the leaderbo
           <figure class="figure-card figure-results">
             <object
               class="figure-pdf"
-              data="assets/Figure3_main_leaderboard_failures.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+              data="assets/Figure3_main_leaderboard_failures.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH"
               type="application/pdf"
               aria-label="Figure 2: Main-experiment scores and failure profile"
             >
@@ -160,7 +167,7 @@ tasks, by domain and overall.  Panel (b) averages over all 76 tasks and assigns 
           <figure class="figure-card figure-ablation">
             <object
               class="figure-pdf"
-              data="assets/Figure5_same_backbone_ablation_scores_failures.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+              data="assets/Figure5_same_backbone_ablation_scores_failures.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH"
               type="application/pdf"
               aria-label="Figure 3: Fixed LLM backbone ablation study"
             >
