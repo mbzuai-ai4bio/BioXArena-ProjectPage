@@ -205,7 +205,8 @@ h2 {
 }
 
 .figure-card {
-  margin: 0;
+  width: min(100%, 480px);
+  margin: 0 auto;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -215,6 +216,7 @@ h2 {
 
 .figure-card.featured {
   grid-column: 1 / -1;
+  width: 85%;
 }
 
 .figure-card img {
@@ -303,5 +305,10 @@ h2 {
 
   .figure-grid {
     grid-template-columns: 1fr;
+  }
+
+  .figure-card,
+  .figure-card.featured {
+    width: 100%;
   }
 }
